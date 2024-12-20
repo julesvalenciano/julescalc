@@ -1,49 +1,80 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f4f4f4;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #ffffff;
 }
 
+/* Container Styling */
 .container {
     text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
 }
 
+/* Input and Button Styling */
 input, select, button {
-    margin: 10px 0;
-    padding: 10px;
-    width: 80%;
+    margin: 15px 0;
+    padding: 12px;
+    width: 100%;
     max-width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input, select {
+    background: #ffffff;
+    color: #333;
+    outline: none;
 }
 
 button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #ff7e5f;
+    color: #fff;
     cursor: pointer;
+    border: none;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ff5e3a;
 }
 
+/* Link Styling */
 .logout {
     display: block;
     margin-top: 20px;
-    color: #007BFF;
+    color: #ff7e5f;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .logout:hover {
-    text-decoration: underline;
+    color: #ff5e3a;
 }
 
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    text-align: left;
+    }
